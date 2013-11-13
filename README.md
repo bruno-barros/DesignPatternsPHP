@@ -33,7 +33,7 @@ Coleção de padrões de projeto para estudo e referência
 * Iterator [wiki](http://en.wikipedia.org/wiki/Iterator_pattern)
 * Mediator [wiki](http://pt.wikipedia.org/wiki/Mediator)
 * NullObject [wiki](http://en.wikipedia.org/wiki/Null_Object_pattern)
-* [Observer](Observer) (http://pt.wikipedia.org/wiki/Observer)
+* [Observer](Observer) [wiki](http://pt.wikipedia.org/wiki/Observer)
 * State [wiki](http://pt.wikipedia.org/wiki/State)
 * [Strategy](Strategy) [wiki](http://pt.wikipedia.org/wiki/Strategy)
 * TemplateMethod [wiki](http://pt.wikipedia.org/wiki/Template_Method)
@@ -45,3 +45,4 @@ Princípios OO
 - Encapsule o que varia
 - Dê prioridade à composição em relação à herança
 - Programe para uma interface, não para implementações
+- Busque designs levemente ligados entre objetos que interagem
