@@ -12,7 +12,7 @@ Coleção de padrões de projeto para estudo e referência
 * StaticFactory
 * Prototype [wiki](http://pt.wikipedia.org/wiki/Prototype)
 * Singleton [wiki](http://pt.wikipedia.org/wiki/Singleton) (considerado anti-pattern)
-* Multiton [wiki](considerado anti-pattern)
+* Multiton (considerado anti-pattern)
 
 ### Structural
 
