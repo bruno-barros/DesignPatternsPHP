@@ -6,7 +6,6 @@ include '../loader.php';
 /*
  * Exemplo de como instanciar objeto sujeito da ação e adicionar objetos ouvintes.
  */
-
 $subject = new ChangeObj();
 $observerA = new ListenerObjA();
 $observerB = new ListenerObjB();
