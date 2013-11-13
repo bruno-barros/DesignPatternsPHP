@@ -3,7 +3,6 @@ DesignPatternsPHP
 
 Coleção de padrões de projeto para estudo e referência
 
-
 ### Creational
 
 * [AbstractFactory](AbstractFactory) (http://en.wikipedia.org/wiki/Abstract_factory_pattern)
@@ -39,3 +38,10 @@ Coleção de padrões de projeto para estudo e referência
 * [Strategy](Strategy) (http://en.wikipedia.org/wiki/Strategy_pattern)
 * [TemplateMethod](TemplateMethod) (http://en.wikipedia.org/wiki/Template_method_pattern)
 * [Visitor](Visitor) (http://en.wikipedia.org/wiki/Visitor_pattern)
+
+
+Princípios OO
+-------------
+- Encapsule o que varia
+- Dê prioridade à composição em relação à herança
+- Programe para uma interface, não para implementações

@@ -1,7 +1,7 @@
 Observer
 ========
 
-Define uma família de algoritmos, encapsula cada um deles e os torna intercambiáveis. A estratégia permite que o algoritmo varie independentemente dos clientes que o utilizam.
+Define a dependência *um para muitos* entre objetos para que quando um objeto mude de estado todos os seus dependentes sejam avisados e atualzados automaticamente.
 
 ### Exemplo
 
