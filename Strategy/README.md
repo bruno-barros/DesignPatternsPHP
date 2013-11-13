@@ -10,8 +10,8 @@ Define uma família de algoritmos, encapsula cada um deles e os torna intercambi
     /*
      * Por padrão a Ana já tem um comportamento:
      */
-    $ana->speak();
-    $ana->walk();
+    $ana->speak(); // SpeakLoud
+    $ana->walk(); // WalkFast
 
 
     /*
