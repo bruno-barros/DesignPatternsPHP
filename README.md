@@ -1,7 +1,9 @@
 DesignPatternsPHP
 =================
 
-Coleção de padrões de projeto para estudo e referência
+(EM DESENVOLVIMENTO)
+
+Coleção de padrões de projeto para estudo e referência.
 
 ### Creational
 
@@ -18,7 +20,7 @@ Coleção de padrões de projeto para estudo e referência
 
 * Adapter [wiki](http://pt.wikipedia.org/wiki/Adapter)
 * Composite [wiki](http://pt.wikipedia.org/wiki/Composite)
-* Decorator [wiki](http://pt.wikipedia.org/wiki/Decorator)
+* [Decorator](Decorator) [wiki](http://pt.wikipedia.org/wiki/Decorator)
 * Facade [wiki](http://pt.wikipedia.org/wiki/Fa%C3%A7ade)
 * Proxy [wiki](http://pt.wikipedia.org/wiki/Proxy_(padr%C3%B5es_de_projeto))
 * Registry [wiki](http://en.wikipedia.org/wiki/Service_locator_pattern)
@@ -46,3 +48,4 @@ Princípios OO
 - Dê prioridade à composição em relação à herança
 - Programe para uma interface, não para implementações
 - Busque designs levemente ligados entre objetos que interagem
+- As classes devem estar abertas para extensão, mas fechadas para modificação
