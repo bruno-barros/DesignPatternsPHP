@@ -1,29 +1,27 @@
-Observer
-========
+Decorator
+=========
 
-Define a dependência *um para muitos* entre objetos para que quando um objeto mude de estado todos os seus dependentes sejam avisados e atualzados automaticamente.
+Anexa responsabilidades adicionais a um objeto dinamicamente. Os decoradores fornecem uma alternativa flexível de subclasse para estender a funcionalidade.
+
+* Os decoradores têm o mesmo supertipo que os objetos que eles decoram
+* Você pode usar um ou mais decoradores para englobar um objeto
+* Uma vez que o decorador tem o mesmo supertipo que o objeto decorado, podemos passar um objeto no lugar do objeto original (englobado)
+* O decorador adiciona seu próprio comportamento antes e/ou depois de delegar para o objeto que ele decora o resto do trabalho
+* Os objetos podem ser decorados a qualquer momento, então podemos decorar os objetos de maneira dinâmica no tempo de execução com quantos decoradores desejarmos
 
 ### Exemplo
 
     /*
-     * Exemplo de como instanciar objeto sujeito da ação e adicionar objetos ouvintes.
+     * Exemplo: instancia-se a classe principal, que será decorada
      */
-    $subject = new ChangeObj();
-    $observerA = new ListenerObjA();
-    $observerB = new ListenerObjB();
+    $beverage = new BeverageConcrete();
 
     /*
-     * Adiciona ouvinte
+     * Decorando...
      */
-    $subject->attach($observerA);
-    $subject->attach($observerB);
+    $beverage = new Decorators\Milk($beverage); // com leite
+    $beverage = new Decorators\Mocha($beverage); // com café
 
-    /*
-     * Muda um atributo (ouvintes são notificados)
-     */
-    $subject->setName('Eu gosto de atencao');
-
-    /*
-     * Nova mudança de atributo (ouvintes são notificados)
-     */
-    $subject->setName('Eu adoro atencao');
+    echo $beverage->getDescription();
+    echo "\n";
+    echo $beverage->cost();
