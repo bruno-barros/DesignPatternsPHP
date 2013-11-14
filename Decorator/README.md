@@ -22,6 +22,6 @@ Anexa responsabilidades adicionais a um objeto dinamicamente. Os decoradores for
     $beverage = new Decorators\Milk($beverage); // com leite
     $beverage = new Decorators\Mocha($beverage); // com café
 
-    echo $beverage->getDescription();
+    echo $beverage->getDescription(); // Bebida concreta + leite + mocha
     echo "\n";
-    echo $beverage->cost();
+    echo $beverage->cost(); // 11.95 // [10.00 + 1.50 + 0.45]
