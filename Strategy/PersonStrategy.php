@@ -1,6 +1,9 @@
 <?php
 namespace DesignPatternsPHP\Strategy;
 
+use DesignPatternsPHP\Strategy\SpeakInterface;
+use DesignPatternsPHP\Strategy\WalkInterface;
+
 /**
  * Abstração para objeto pessoa que implementa padrão Strategy
  */
@@ -22,7 +25,7 @@ abstract class PersonStrategy {
      * Define objeto para forma de falar
      * @param object $speakBehavior
      */
-    public function setSpeak($speakBehavior)
+    public function setSpeak(SpeakInterface $speakBehavior)
     {
         $this->speakBehavior = $speakBehavior;
     }
@@ -40,7 +43,7 @@ abstract class PersonStrategy {
      * Define objeto para forma de andar
      * @param object $walkBehavior
      */
-    public function setWalk($walkBehavior)
+    public function setWalk(WalkInterface $walkBehavior)
     {
         $this->walkBehavior = $walkBehavior;
     }
