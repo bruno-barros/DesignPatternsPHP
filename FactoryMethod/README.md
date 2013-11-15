@@ -1,29 +1,30 @@
-Observer
-========
+FactoryMethod
+=============
 
-Define a dependência *um para muitos* entre objetos para que quando um objeto mude de estado todos os seus dependentes sejam avisados e atualzados automaticamente.
+Define um ainterface para criar um objeto, mas permite às classes decidir qual classe instanciar. O Factory Method permite a uma classe deferir a instanciação para subclases.
+
 
 ### Exemplo
 
     /*
-     * Exemplo de como instanciar objeto sujeito da ação e adicionar objetos ouvintes.
+     * Fabricando uma pizza no estilo "A" de queijo
      */
-    $subject = new ChangeObj();
-    $observerA = new ListenerObjA();
-    $observerB = new ListenerObjB();
+    $aStyle = new AStyle\AStyleFactory();
+    $pizza = $aStyle->makePizza('cheese');
+    $pizza->output();
+
 
     /*
-     * Adiciona ouvinte
+     * Fabricando uma pizza no estilo "A" de pepperoni
      */
-    $subject->attach($observerA);
-    $subject->attach($observerB);
+    $aStyle = new AStyle\AStyleFactory();
+    $pizza = $aStyle->makePizza('pepperoni');
+    $pizza->output();
+
 
     /*
-     * Muda um atributo (ouvintes são notificados)
+     * Fabricando uma pizza no estilo "B" de pepperoni
      */
-    $subject->setName('Eu gosto de atencao');
-
-    /*
-     * Nova mudança de atributo (ouvintes são notificados)
-     */
-    $subject->setName('Eu adoro atencao');
+    $bStyle = new BStyle\BStyleFactory();
+    $pizza = $bStyle->makePizza('pepperoni');
+    $pizza->output();
