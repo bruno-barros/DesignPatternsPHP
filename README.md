@@ -10,7 +10,7 @@ Coleção de padrões de projeto para estudo e referência.
 * AbstractFactory [wiki](http://pt.wikipedia.org/wiki/Abstract_Factory)
 * Builder [wiki](http://pt.wikipedia.org/wiki/Builder)
 * SimpleFactory
-* FactoryMethod [wiki](http://pt.wikipedia.org/wiki/Factory_Method)
+* [FactoryMethod](FactoryMethod) [wiki](http://pt.wikipedia.org/wiki/Factory_Method)
 * StaticFactory
 * Prototype [wiki](http://pt.wikipedia.org/wiki/Prototype)
 * Singleton [wiki](http://pt.wikipedia.org/wiki/Singleton) (considerado anti-pattern)
