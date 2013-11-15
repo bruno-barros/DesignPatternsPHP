@@ -44,8 +44,9 @@ Coleção de padrões de projeto para estudo e referência.
 
 Princípios OO
 -------------
-- Encapsule o que varia
-- Dê prioridade à composição em relação à herança
-- Programe para uma interface, não para implementações
-- Busque designs levemente ligados entre objetos que interagem
-- As classes devem estar abertas para extensão, mas fechadas para modificação
+- Encapsule o que varia.
+- Dê prioridade à composição em relação à herança.
+- Programe para uma interface, não para implementações.
+- Busque designs levemente ligados entre objetos que interagem.
+- As classes devem estar abertas para extensão, mas fechadas para modificação.
+- Princípio da Inversão de Dependência: depende de abstrações. Não depende de classes concretas.
